@@ -95,9 +95,10 @@ body {
   h3 {
       color: #201335;
   }
-
-  footer {
-      min-width: 50px;
-      background-color: #ffea85;
-      text-align: center;
-  }
+footer {
+  background: grey;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  bottom: 0px;
+}
