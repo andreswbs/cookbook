@@ -51,15 +51,22 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .dish {
     max-height: 40rem;
-    max-width: 85vw;
-    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    flex: auto;
 }
 
-.dish img {
+.dish figure {
+    width: 100%;
+    display: contents;
 }
 
 @media screen and (min-width:768px) {
@@ -67,5 +74,13 @@ ul {
         display: flex;
         flex-flow: row;
         align-items: center;
+        justify-content: flex-start;
+    }
+    .dish img {
+        width: 100%
+    }
+    .dish figure {
+        width: 33%;
+        display: block;
     }
 }
