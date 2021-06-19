@@ -240,43 +240,103 @@
         /* 
     Styling Kitchen indexes
     */
-
-    /* Section for styling the landing page start */
-
-.landing-welcome {
-    margin: 0 auto;
-    width: 100%;
-    background-image: url('Images/chefs.jpg');
-    background-size: cover;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.landing-welcome h1, .landing-welcome p {
-    text-align: center;
-    background-color: rgba(255, 234, 133, 0.5)
-}
-
-.landing-welcome h1 {
-    font-size: 4rem;
-}
-
-.landing-welcome p {
-    font-size: 1.5rem;
-}
-
-.kitchens-container {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-}
-
-.kitchens-container div {
-    width: 25%;
-    
-}
-
-/* End section for styling the landing page */
+        /* Section for styling the landing page start */
+        
+        .landing-welcome {
+            margin: 0 auto;
+            width: 100%;
+            background-image: url('Images/chefs.jpg');
+            background-size: cover;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .landing-welcome h1,
+        .landing-welcome p {
+            text-align: center;
+            background-color: rgba(255, 234, 133, 0.5)
+        }
+        
+        .landing-welcome h1 {
+            font-size: 4rem;
+        }
+        
+        .landing-welcome p {
+            font-size: 1.5rem;
+        }
+        
+        .kitchens-container {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+        }
+        
+        .kitchens-container div {
+            width: 25%;
+        }
+        /* End section for styling the landing page */
+        /* 
+    Styling Recipe pages
+    */
+        
+        .recipe-topwrap {
+            display: flex;
+            align-items: stretch;
+        }
+        
+        .recipe-topwrap figure {
+            width: 50%;
+            display: inline-block;
+        }
+        
+        .recipe-topwrap img {
+            object-fit: cover;
+            min-width: 100%;
+        }
+        
+        .recipe-text {
+            display: block;
+            width: 50%;
+            padding: 2rem;
+        }
+        
+        .ing-steps {
+            display: flex;
+        }
+        
+        .ingredients {
+            width: 50%;
+            padding: 2rem 4rem;
+        }
+        
+        .ingredients table {
+            margin-top: 2rem;
+        }
+        
+        .steps {
+            width: 50%;
+            padding: 2rem 4rem;
+        }
+        
+        .steps ol li::marker {
+            font-size: 2.5rem;
+            color: #e8c000;
+        }
+        
+        .steps li {
+            margin-bottom: 2rem;
+        }
+        
+        .steps li:first-child {
+            margin-top: 2rem;
+        }
+        
+        .steps li:last-child {
+            margin-bottom: 0;
+        }
+        /* 
+    End of the styling Recipe pages section
+    */
