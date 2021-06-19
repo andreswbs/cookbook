@@ -277,14 +277,14 @@
 
         .kitchen {
             width: 25%;
-            position: relative;
+            /*position: relative;*/
         }
 
         .kitchens-container div img {
             width: 100%;
         }
 
-        .img-caption {
+       /* .img-caption {
             position: absolute;
             top: 20px;
             left: 20px;
@@ -295,11 +295,11 @@
             min-width: max-content;
             padding-left: 10px;
             padding-right: 10px;
-        }
+        } */
 
-        .kitchen img:hover {
+        /*.kitchen img:hover {
             border: 1px groove #f0f;
-        }
+        }*/
 
         @media screen and (max-width: 769px) {
             .kitchens-container {
@@ -313,3 +313,55 @@
 
 
         /* End section for styling the landing page */
+
+        /* Trying new boxes on hover */
+
+        .hover-container {
+            position: relative;
+            width: 50%;
+
+        }
+
+        .hover-img {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .img-caption {
+            transition: .5s ease;
+            opacity: 1;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            /*transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);*/
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .hover-container:hover .hover-img {
+            opacity: 0.3;
+        }
+
+        .hover-container:hover .img-caption {
+            background-color: rgb(63, 247, 210, 1);
+        }
+
+        .hover-container:hover .hover-text {
+            color: #f73f52;
+        }
+
+        .hover-text {
+            background-color: rgb(63, 247, 210, 0.5);
+            color: black;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+
+
+        /* End trying new boxes */
