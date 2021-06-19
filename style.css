@@ -285,16 +285,12 @@
         .recipe-topwrap {
             display: flex;
             align-items: stretch;
-        }
-        
-        .recipe-topwrap figure {
-            width: 50%;
-            display: inline-block;
+            height: 40rem;
         }
         
         .recipe-topwrap img {
             object-fit: cover;
-            min-width: 100%;
+            width: 50%;
         }
         
         .recipe-text {
@@ -336,6 +332,28 @@
         
         .steps li:last-child {
             margin-bottom: 0;
+        }
+        
+        @media screen and (max-width:768px) {
+            .recipe-topwrap img {
+                width: 100%;
+            }
+            .recipe-text {
+                width: 100%;
+            }
+            .ingredients {
+                width: 100%;
+                padding: 2rem 0.7rem;
+            }
+            .steps {
+                width: 100%;
+            }
+            .recipe-topwrap {
+                flex-flow: column;
+            }
+            .ing-steps {
+                flex-flow: column;
+            }
         }
         /* 
     End of the styling Recipe pages section
