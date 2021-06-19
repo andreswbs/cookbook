@@ -54,6 +54,7 @@
             flex-flow: column;
             justify-content: center;
             flex: auto;
+            margin-bottom: 3rem;
         }
         
         .dish figure {
@@ -180,33 +181,45 @@
             width: 100%;
             bottom: 0px;
         }
+        /* 
+    Styling Kitchen indexes
+    */
         
         .button {
             background-color: #ffea85;
             border-radius: 2rem;
             display: block;
+            transition: 0.3s ease-out;
         }
-        /* 
-    Styling Kitchen indexes
-    */
         
         .button a {
             padding: 0.5rem 1rem;
             display: block;
             text-decoration: none;
             color: #2B2D42;
-            transition: 0.3s ease-out
         }
         
         @media screen and (min-width:768px) {
             .dish figure {
                 width: calc(100% * (1 / 3.001));
                 height: 20rem;
-                margin-bottom: 3rem;
                 overflow: hidden;
-                display: flex;
-                flex-wrap: wrap;
+                display: inline-flex;
             }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .dish {
+                max-height: none;
+            }
+            .dish figure {
+                max-height: 30rem;
+            }
+        }
+        
+        .dish img {
+            object-fit: cover;
+            width: 100%;
         }
         
         .dish .dishwrap {
@@ -218,12 +231,13 @@
         .button {
             width: fit-content;
             margin-top: 2rem;
+            border: solid transparent 1px;
         }
         
-        button:hover {
-            background-color: none;
+        .button:hover {
+            background-color: rgba(255, 234, 133, 0.3);
             transition: 0.3s ease-out;
-            border: solid 1px #ffea85;
+            border: solid 1px #e8c000;
         }
         /* 
     Styling Kitchen indexes
