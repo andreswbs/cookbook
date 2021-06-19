@@ -18,13 +18,15 @@
 <body>
     <header>
         <figure>
-            <img src="Images/logo.png" alt="HARE Kitchen logo">
+            <a href="/index.html">
+                <img src="./Images/logo.png" alt="HARE Kitchen logo">
+            </a>
         </figure>
     </header>
 
     <nav class="categories">
         <ul>
-            <li> <a href="index.html">All</a></li>
+            <li> <a href="index.html">Home</a></li>
             <li> <a href="kitchens/italian/index.html">Italian</a></li>
             <li><a href="kitchens/japanese/index.html">Japanese</a></li>
             <li> <a href="kitchens/russian/index.html">Russian</a></li>
@@ -33,41 +35,47 @@
     </nav>
 
     <main>
-
-        <div class="dishes">
-            <article class="dish">
-                <figure>
-                    <img src="./Images/Italian/Pizza.jpg" alt="Pizza Recipe">
-                </figure>
-                <section class="dishwrap">
-                    <h3>Pizza</h3>
-                    <p>description</p>
-                    <div class="button"><a href="pizza-margherita.html">read more</a></div>
-                </section>
-            </article>
-
-            <article class="dish">
-                <figure>
-                    <img src="./Images/Italian/Pizza.jpg" alt="Pizza Recipe">
-                </figure>
-                <section class="dishwrap">
-                    <h3>Pizza</h3>
-                    <p>description</p>
-                    <div class="button"><a href="pizza-margherita.html">read more</a></div>
-                </section>
-            </article>
-
-            <article class="dish">
-                <figure>
-                    <img src="./Images/Italian/Pizza.jpg" alt="Pizza Recipe">
-                </figure>
-                <section class="dishwrap">
-                    <h3>Pizza</h3>
-                    <p>description</p>
-                    <div class="button"><a href="pizza-margherita.html">read more</a></div>
-                </section>
-            </article>
-        </div>
+        <section class="landing-welcome">
+            <h1>Welcome to the HARE kitchen!</h1>
+            <p>We are a bunch of passionate chefs with various backgrounds, styles and tastes, and our goal is to give
+                you new ideas to try out yourself and delight your tastebuds! </p>
+        </section>
+        <section class="kitchens-container">
+            <div class="kitchen">
+                <a href="kitchens/italian/index.html" class="hover-container">
+                    <img src="./Images/Italian/Pizza.jpg" alt="Italian food" class="hover-img">
+                    <div class="img-caption">
+                        <div class="hover-text">Italian</div>
+                    </div>                
+                </a>
+            </div>
+            <div class="kitchen">
+                <a href="kitchens/japanese/index.html" class="hover-container">
+                    <img src="./Images/Japanese/Onigiri.jpg" alt="Japanese food" class="hover-img">
+                    <div class="img-caption">
+                        <div class="hover-text">Japanese</div>
+                    </div>
+                </a>
+            </div>
+            <div class="kitchen">
+                <a href="kitchens/russian/index.html" class="hover-container">
+                    <img src="./Images/Russian/Borscht.jpg" alt="Russian food" class="hover-img">
+                    <div class="img-caption">
+                        <div class="hover-text">
+                            Russian
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="kitchen">
+                <a href="kitchens/turkish/index.html" class="hover-container">
+                    <img src="./Images/Turkish/Kebab.jpg" alt="Turkish food" class="hover-img">
+                    <div class="img-caption">
+                        <div class="hover-text">Turkish</div>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
     <footer>
         <div>
