@@ -243,11 +243,11 @@
         /* Section for styling the landing page start */
         
         .landing-welcome {
-            margin: 0 auto;
+            margin: 5% auto 2.5% auto;
             width: 100%;
             background-image: url('Images/chefs.jpg');
             background-size: cover;
-            min-height: 300px;
+            min-height: 600px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -269,96 +269,88 @@
         }
         
         .kitchens-container {
-            margin: 0 auto;
+            margin: 2.5% auto 5% auto;
             width: 100%;
             display: flex;
         }
         
-        .kitchens-container div {
+        .kitchen {
             width: 25%;
+            /*position: relative;*/
+        }
+        
+        .kitchens-container div img {
+            width: 100%;
+        }
+        /* .img-caption {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            min-width: max-content;
+            padding-left: 10px;
+            padding-right: 10px;
+        } */
+        /*.kitchen img:hover {
+            border: 1px groove #f0f;
+        }*/
+        
+        @media screen and (max-width: 769px) {
+            .kitchens-container {
+                flex-direction: column;
+            }
+            .kitchen {
+                width: 100%;
+            }
         }
         /* End section for styling the landing page */
-        /* 
-    Styling Recipe pages
-    */
+        /* Trying new boxes on hover */
         
-        .steps ol {
-            padding-left: 1rem;
-        }
-        
-        .recipe-topwrap {
-            display: flex;
-            align-items: stretch;
-            height: 40rem;
-        }
-        
-        .recipe-topwrap img {
-            object-fit: cover;
+        .hover-container {
+            position: relative;
             width: 50%;
         }
         
-        .recipe-text {
+        .hover-img {
+            opacity: 1;
             display: block;
-            width: 50%;
-            padding: 2rem;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
         }
         
-        .ing-steps {
-            display: flex;
+        .img-caption {
+            transition: .5s ease;
+            opacity: 1;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            /*transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);*/
+            font-size: 1.5rem;
+            text-align: center;
         }
         
-        .ingredients {
-            width: 50%;
-            padding: 2rem 4rem;
+        .hover-container:hover .hover-img {
+            opacity: 0.3;
         }
         
-        .ingredients table {
-            margin-top: 2rem;
+        .hover-container:hover .img-caption {
+            background-color: rgb(63, 247, 210, 1);
         }
         
-        .steps {
-            width: 50%;
-            padding: 2rem 4rem;
+        .hover-container:hover .hover-text {
+            color: #f73f52;
         }
         
-        .steps ol li::marker {
-            font-size: 2.5rem;
-            color: #e8c000;
+        .hover-text {
+            background-color: rgb(63, 247, 210, 0.5);
+            color: black;
+            font-size: 16px;
+            padding: 16px 32px;
         }
-        
-        .steps li {
-            margin-bottom: 2rem;
-        }
-        
-        .steps li:first-child {
-            margin-top: 2rem;
-        }
-        
-        .steps li:last-child {
-            margin-bottom: 0;
-        }
-        
-        @media screen and (max-width:768px) {
-            .recipe-topwrap img {
-                width: 100%;
-            }
-            .recipe-text {
-                width: 100%;
-            }
-            .ingredients {
-                width: 100%;
-                padding: 2rem 0.7rem;
-            }
-            .steps {
-                width: 100%;
-            }
-            .recipe-topwrap {
-                flex-flow: column;
-            }
-            .ing-steps {
-                flex-flow: column;
-            }
-        }
-        /* 
-    End of the styling Recipe pages section
-    */
+        /* End trying new boxes */
