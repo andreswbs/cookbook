@@ -282,6 +282,10 @@
     Styling Recipe pages
     */
         
+        .steps ol {
+            padding-left: 1rem;
+        }
+        
         .recipe-topwrap {
             display: flex;
             align-items: stretch;
