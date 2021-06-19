@@ -58,6 +58,7 @@
         
         .dish figure {
             width: 100%;
+            overflow: hidden;
         }
         
         @media screen and (min-width:768px) {
@@ -185,15 +186,17 @@
             border-radius: 2rem;
             display: block;
         }
+        /* 
+    Styling Kitchen indexes
+    */
         
         .button a {
             padding: 0.5rem 1rem;
             display: block;
             text-decoration: none;
+            color: #2B2D42;
+            transition: 0.3s ease-out
         }
-        /* 
-    Styling Kitchen indexes
-    */
         
         @media screen and (min-width:768px) {
             .dish figure {
@@ -201,6 +204,8 @@
                 height: 20rem;
                 margin-bottom: 3rem;
                 overflow: hidden;
+                display: flex;
+                flex-wrap: wrap;
             }
         }
         
@@ -213,6 +218,12 @@
         .button {
             width: fit-content;
             margin-top: 2rem;
+        }
+        
+        button:hover {
+            background-color: none;
+            transition: 0.3s ease-out;
+            border: solid 1px #ffea85;
         }
         /* 
     Styling Kitchen indexes
