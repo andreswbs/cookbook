@@ -119,57 +119,6 @@
     linear-gradient(to left, rgba(255, 234, 133, 0.0), 25%, rgba(255, 234, 133, 1)),
     url('Images/header-img2.jpg');
     background-size: cover;*/
-}
-
-       /* Footer section */
-    footer {
-        background: grey;
-        height: 200px;
-        width: 100%;
-        bottom: 0px;
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-
-
-    }
-
-    /* Footer content */
-    footer a {
-          text-decoration: none;
-        color: black;
-
-    }
-
-    footer li {
-        list-style-type: none;
-    }
-
-
-.footer-box {
-    padding: 20px; 
-
-}
-
-
-.footer-header {
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-}
-
-
-
-    .button {
-        background-color: #ffea85;
-        border-radius: 2rem;
-        display: block;
-    }
-}
-.button a {
-    padding: 0.5rem 1rem;
-    display: block;
-    text-decoration: none;
         }
         
         header img {
@@ -222,7 +171,14 @@
         h3 {
             color: #201335;
         }
-
+        
+        footer {
+            background: grey;
+            text-align: center;
+            height: 100px;
+            width: 100%;
+            bottom: 0px;
+        }
         /* 
     Styling Kitchen indexes
     */
@@ -301,9 +257,7 @@
         .landing-welcome h1,
         .landing-welcome p {
             text-align: center;
-            background-color: rgba(255, 234, 133, 0.5);
-            padding-left: 20px;
-            padding-right: 20px;
+            background-color: rgba(255, 234, 133, 0.5)
         }
         
         .landing-welcome h1 {
@@ -399,3 +353,4 @@
             font-size: 16px;
             padding: 16px 32px;
         }
+        /* End trying new boxes */
