@@ -165,7 +165,7 @@
         border-radius: 2rem;
         display: block;
     }
-}
+
 .button a {
     padding: 0.5rem 1rem;
     display: block;
@@ -208,15 +208,16 @@
         nav ul li a {
             text-decoration: none;
             color: #f73f52;
-            padding: 5px;
+            padding: 15px 30px;
             font-weight: bold;
             font-size: 20px;
+            display: inline-block;
         }
         
         nav ul li a:hover {
             background-color: rgba(252, 231, 98, 0.5);
-            border: 1px solid #4F4789;
-            border-radius: 10%;
+            text-decoration: none;
+            color: black;
         }
         
         h3 {
