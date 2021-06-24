@@ -119,57 +119,49 @@
     linear-gradient(to left, rgba(255, 234, 133, 0.0), 25%, rgba(255, 234, 133, 1)),
     url('Images/header-img2.jpg');
     background-size: cover;*/
-}
-
-       /* Footer section */
-    footer {
-        background: grey;
-        height: 200px;
-        width: 100%;
-        bottom: 0px;
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-
-
-    }
-
-    /* Footer content */
-    footer a {
-          text-decoration: none;
-        color: black;
-
-    }
-
-    footer li {
-        list-style-type: none;
-    }
-
-
-.footer-box {
-    padding: 20px; 
-
-}
-
-
-.footer-header {
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-}
-
-
-
-    .button {
-        background-color: #ffea85;
-        border-radius: 2rem;
-        display: block;
-    }
-
-.button a {
-    padding: 0.5rem 1rem;
-    display: block;
-    text-decoration: none;
+        }
+        /* Footer section */
+        
+        footer {
+            background: grey;
+            height: 200px;
+            width: 100%;
+            bottom: 0px;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+        /* Footer content */
+        
+        footer a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        footer li {
+            list-style-type: none;
+        }
+        
+        .footer-box {
+            padding: 20px;
+        }
+        
+        .footer-header {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .button {
+            background-color: #ffea85;
+            border-radius: 2rem;
+            display: block;
+        }
+        
+        .button a {
+            padding: 0.5rem 1rem;
+            display: block;
+            text-decoration: none;
         }
         
         header img {
@@ -218,12 +210,13 @@
             background-color: rgba(252, 231, 98, 0.5);
             text-decoration: none;
             color: black;
+            border: 1px solid #4F4789;
+            border-radius: 10%;
         }
         
         h3 {
             color: #201335;
         }
-
         /* 
     Styling Kitchen indexes
     */
@@ -400,3 +393,87 @@
             font-size: 16px;
             padding: 16px 32px;
         }
+        /* 
+    Styling Recipe pages
+    */
+        
+        .steps ol {
+            padding-left: 1rem;
+        }
+        
+        .recipe-topwrap {
+            display: flex;
+            align-items: stretch;
+            height: 40rem;
+        }
+        
+        .recipe-topwrap img {
+            object-fit: cover;
+            width: 50%;
+        }
+        
+        .recipe-text {
+            display: block;
+            width: 50%;
+            padding: 2rem;
+        }
+        
+        .ing-steps {
+            display: flex;
+        }
+        
+        .ingredients {
+            width: 50%;
+            padding: 2rem 4rem;
+        }
+        
+        .ingredients table {
+            margin-top: 2rem;
+        }
+        
+        .steps {
+            width: 50%;
+            padding: 2rem 4rem;
+        }
+        
+        .steps ol li::marker {
+            font-size: 2.5rem;
+            color: #e8c000;
+        }
+        
+        .steps li {
+            margin-bottom: 2rem;
+        }
+        
+        .steps li:first-child {
+            margin-top: 2rem;
+        }
+        
+        .steps li:last-child {
+            margin-bottom: 0;
+        }
+        
+        @media screen and (max-width:768px) {
+            .recipe-topwrap img {
+                width: 100%;
+            }
+            .recipe-text {
+                width: 100%;
+            }
+            .ingredients {
+                width: 100%;
+                padding: 2rem 0.7rem;
+            }
+            .steps {
+                width: 100%;
+            }
+            .recipe-topwrap {
+                flex-flow: column;
+            }
+            .ing-steps {
+                flex-flow: column;
+            }
+        }
+        /* 
+End of the styling Recipe pages section
+*/
