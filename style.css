@@ -24,6 +24,11 @@
          ::-webkit-scrollbar-thumb {
             background-color: #f73f52;
         }
+
+        .active {
+            background: azure;
+            border-radius: 2rem;
+        }
         
         .categories li {
             margin-right: 2rem;
