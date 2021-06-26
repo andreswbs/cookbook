@@ -13,6 +13,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Russian Borscht</title>
     <link rel="stylesheet" href="../../style.css">
+    <script>
+        function share() {
+            alert(document.title);
+            document.write("share this recipe!");
+        }
+    </script>
 </head>
 
 <body>
@@ -28,7 +34,7 @@
             <li> <a href="../../index.html">Home</a></li>
             <li> <a href="../italian/index.html">Italian</a></li>
             <li><a href="../japanese/index.html">Japanese</a></li>
-            <li> <a href="../russian/index.html"  class="active">Russian</a></li>
+            <li> <a href="../russian/index.html" class="active">Russian</a></li>
             <li> <a href="../turkish/index.html">Turkish</a></li>
         </ul>
     </nav>
@@ -39,7 +45,7 @@
                 <div class="recipe-text">
                     <h3>Borscht</h3>
                     <p>A traditional russian soup made with fresh beets</p>
-
+                    <div class="button" onclick="share();"><a href="Borscht.html">Share this recipe!</a></div>
                 </div>
             </div>
             <section class="ing-steps">
