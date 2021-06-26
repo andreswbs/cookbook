@@ -123,14 +123,25 @@
         /* Footer section */
         
         footer {
-            background: grey;
+            background: #FFEA85;
             height: 200px;
             width: 100%;
             bottom: 0px;
             display: flex;
             justify-content: space-around;
             list-style-type: none;
+            flex-direction: column;
+            margin-top: 200px;
         }
+
+        @media screen and (min-width: 769px) {
+            footer {
+                flex-direction: row;
+                margin-top: 50px;
+            }    
+
+        }   
+
         /* Footer content */
         
         footer a {
@@ -144,6 +155,7 @@
         
         .footer-box {
             padding: 20px;
+            background-color:#FFEA85;
         }
         
         .footer-header {
