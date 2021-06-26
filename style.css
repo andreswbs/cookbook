@@ -310,88 +310,68 @@
             margin: 2.5% auto 5% auto;
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
         }
         
         .kitchen {
             width: 25%;
-            /*position: relative;*/
+            background-size: cover;
+            position: relative;
+            display: inline-block;
         }
         
-        .kitchens-container div img {
+        .kitchen-image {
             width: 100%;
-        }
-        /* .img-caption {
+            vertical-align: bottom;
+        }      
+
+        .kitchen-description-layer {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 1.5rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #000;
+            font-size: 2rem;
+            font-weight: bold;
+            visibility: visible;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.4s;
+        }
+
+        .kitchen:hover .kitchen-description-layer {
+            background: rgba(252, 231, 98, 0.5);
+        }
+
+        .kitchen-description {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            min-width: max-content;
-            padding-left: 10px;
-            padding-right: 10px;
-        } */
-        /*.kitchen img:hover {
-            border: 1px groove #f0f;
-        }*/
+            background: rgba(252, 231, 98, 0.4);
+            padding: 0.5rem 1rem;
+        }
         
         @media screen and (max-width: 769px) {
             .kitchens-container {
                 flex-direction: column;
+                flex-wrap: nowrap;
             }
             .kitchen {
                 width: 100%;
             }
         }
+
+        @media screen and (min-width: 770px) and (max-width: 993px) {
+            .kitchen {
+                width: 50%;
+            }
+        }
+
         /* End section for styling the landing page */
-        /* Trying new boxes on hover */
-        
-        .hover-container {
-            position: relative;
-            width: 50%;
-        }
-        
-        .hover-img {
-            opacity: 1;
-            display: block;
-            width: 100%;
-            height: auto;
-            transition: .5s ease;
-            backface-visibility: hidden;
-        }
-        
-        .img-caption {
-            transition: .5s ease;
-            opacity: 1;
-            position: absolute;
-            top: 8px;
-            left: 8px;
-            /*transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);*/
-            font-size: 1.5rem;
-            text-align: center;
-        }
-        
-        .hover-container:hover .hover-img {
-            opacity: 0.3;
-        }
-        
-        .hover-container:hover .img-caption {
-            background-color: rgb(63, 247, 210, 1);
-        }
-        
-        .hover-container:hover .hover-text {
-            color: #f73f52;
-        }
-        
-        .hover-text {
-            background-color: rgb(63, 247, 210, 0.5);
-            color: black;
-            font-size: 16px;
-            padding: 16px 32px;
-        }
-        /* 
+
+
+        /*
     Styling Recipe pages
     */
         
