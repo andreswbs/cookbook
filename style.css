@@ -462,10 +462,11 @@
             }
             .ingredients {
                 width: 100%;
-                padding: 2rem 0.7rem;
+                padding: 2rem;
             }
             .steps {
                 width: 100%;
+                padding: 2rem;
             }
             .recipe-topwrap {
                 flex-flow: column;
@@ -494,9 +495,6 @@ Mobile styling
             }
             .recipe-topwrap {
                 height: auto
-            }
-            .steps {
-                padding: 2rem 1rem;
             }
             .steps ol {
                 padding: 0rem 0rem 0rem 3rem;
