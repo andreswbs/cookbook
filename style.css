@@ -478,6 +478,31 @@ End of the styling Recipe pages section
         /* 
 Mobile styling
 */
+        
+        @media screen and (max-width:768px) {
+            nav ul {
+                justify-content: end;
+            }
+            .dish .dishwrap {
+                padding: 1rem;
+                width: 100%
+            }
+            .recipe-topwrap img {
+                max-height: 20rem;
+            }
+            .recipe-topwrap {
+                height: auto
+            }
+            .steps {
+                padding: 2rem 1rem;
+            }
+            .steps ol {
+                padding: 0rem 0rem 0rem 3rem;
+            }
+            .dish img {
+                height: 20rem;
+            }
+        }
         /* 
         Mobile styling
 */
