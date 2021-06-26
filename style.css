@@ -515,6 +515,9 @@ Mobile styling
             .dish img {
                 height: 20rem;
             }
+            nav {
+                border-bottom: none
+            }
         }
         /* 
         Mobile styling
