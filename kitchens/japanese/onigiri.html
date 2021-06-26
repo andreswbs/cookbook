@@ -13,6 +13,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Japanese Onigiri</title>
     <link rel="stylesheet" href="../../style.css">
+    <script>
+        function share() {
+            alert(document.title);
+            document.write("share this recipe!");
+        }
+    </script>
 </head>
 
 <body>
@@ -39,7 +45,7 @@
                 <div class="recipe-text">
                     <h3>Onigiri</h3>
                     <p>Onigiri are Japanese rice balls. They're fun to make and are a staple of Japanese lunchboxes (bento). You can put almost anything in an onigiri; try substituting grilled salmon, pickled plums, beef, pork, turkey, or tuna with mayonnaise.</p>
-
+                    <div class="button" onclick="share();"><a href="onigiri.html">Share this recipe!</a></div>
                 </div>
             </div>
             <section class="ing-steps">
