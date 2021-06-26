@@ -1,6 +1,7 @@
         body {
             margin: 0;
             padding: 0;
+            hyphens: auto;
         }
         
         * {
@@ -8,8 +9,9 @@
             padding: 0;
             max-width: 100vw;
         }
-
-        p, .steps {
+        
+        p,
+        .steps {
             text-align: justify;
         }
         
@@ -24,7 +26,7 @@
          ::-webkit-scrollbar-thumb {
             background-color: #f73f52;
         }
-
+        
         .active {
             background: azure;
             border-radius: 2rem;
@@ -345,8 +347,8 @@
         .kitchen-image {
             width: 100%;
             vertical-align: bottom;
-        }      
-
+        }
+        
         .kitchen-description-layer {
             position: absolute;
             top: 0;
@@ -363,11 +365,11 @@
             justify-content: center;
             transition: 0.4s;
         }
-
+        
         .kitchen:hover .kitchen-description-layer {
             background: rgba(252, 231, 98, 0.5);
         }
-
+        
         .kitchen-description {
             text-align: center;
             background: rgba(252, 231, 98, 0.4);
@@ -383,16 +385,13 @@
                 width: 100%;
             }
         }
-
+        
         @media screen and (min-width: 770px) and (max-width: 993px) {
             .kitchen {
                 width: 50%;
             }
         }
-
         /* End section for styling the landing page */
-
-
         /*
     Styling Recipe pages
     */
@@ -509,7 +508,11 @@ Mobile styling
         /* 
         Mobile styling
 */
-
-            .privacy {
-                margin-top: 30px;
-            }
+        
+        .privacy {
+            margin-top: 30px;
+        }
+        
+        th:first-child {
+            width: 50%
+        }
