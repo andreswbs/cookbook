@@ -359,8 +359,8 @@
             color: #000;
             font-size: 2rem;
             font-weight: bold;
-            visibility: visible;
-            opacity: 1;
+            visibility: hidden;
+            opacity: 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -369,11 +369,13 @@
         
         .kitchen:hover .kitchen-description-layer {
             background: rgba(252, 231, 98, 0.5);
+            visibility: visible;
+            opacity: 1;
         }
         
         .kitchen-description {
             text-align: center;
-            background: rgba(252, 231, 98, 0.4);
+            
             padding: 0.5rem 1rem;
         }
         
@@ -392,6 +394,18 @@
                 width: 50%;
             }
         }
+
+        @media screen and (max-width: 993px) {
+            .kitchen-description-layer {
+                visibility: visible;
+                opacity: 1;
+            }
+            .kitchen-description {
+                background: rgba(252, 231, 98, 0.4);
+            }
+
+        }
+
         /* End section for styling the landing page */
         /*
     Styling Recipe pages
