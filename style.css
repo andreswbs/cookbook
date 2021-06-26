@@ -9,7 +9,7 @@
             max-width: 100vw;
         }
 
-        p {
+        p, .steps {
             text-align: justify;
         }
         
