@@ -101,6 +101,11 @@
             header {
                 background-image: linear-gradient(to left, rgba(255, 234, 133, 0.0), 25%, rgba(255, 234, 133, 1)), url('Images/header-img.jpg');
                 background-size: cover;
+                display: flex
+            }
+            .y-gradient {
+                background: linear-gradient(to left, rgba(255, 234, 133, 0.0), 65%, rgba(255, 234, 133, 1));
+                width: 100%;
             }
         }
         
@@ -375,7 +380,6 @@
         
         .kitchen-description {
             text-align: center;
-            
             padding: 0.5rem 1rem;
         }
         
@@ -394,7 +398,7 @@
                 width: 50%;
             }
         }
-
+        
         @media screen and (max-width: 993px) {
             .kitchen-description-layer {
                 visibility: visible;
@@ -403,9 +407,7 @@
             .kitchen-description {
                 background: rgba(252, 231, 98, 0.4);
             }
-
         }
-
         /* End section for styling the landing page */
         /*
     Styling Recipe pages
